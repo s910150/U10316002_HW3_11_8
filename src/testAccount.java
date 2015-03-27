@@ -1,3 +1,5 @@
+import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
+
 
 //Name:林鈺閔
 //ID:U10316002
@@ -22,9 +24,9 @@ public class testAccount {
 		Account.withdraw(2);
 		
 		//loop for print description ,including deposit and withdraw
-		for(int i = 0;i<6;i++){
+		for(int i = 0;i<Account.list.size();i++){
 		
-		System.out.print((Account.list.get(i)).getDescription());
+			System.out.print(Account.list.get(i).getDescription());
 		
 		}
 		
